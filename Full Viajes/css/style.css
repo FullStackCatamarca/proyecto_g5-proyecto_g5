@@ -1,0 +1,79 @@
+body,
+html {
+    height: 90%;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center center;
+}
+
+main {
+    background: url("img/fondo1.jpg");
+    background-size: 100%;
+    background-position: center center 10px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 100%;
+    color: #fff;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center center;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    margin-right: auto;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-family: cursive;
+    font-size: 20px;
+    color: black;
+}
+
+h5 {
+    font-family: serif;
+    font-size: 10px;
+}
+
+.address {
+    color: white;
+}
+
+p {
+    text-align: center;
+}
+
+.seccion1 {
+    background-color: rgb(247, 232, 232);
+    background-size: 50%
+}
+
+.seccion3 {
+    background-color: rgb(247, 232, 232);
+}
+
+footer {
+    background-color: rgb(196, 194, 194);
+    padding-top: center;
+    text-align: center;
+}
