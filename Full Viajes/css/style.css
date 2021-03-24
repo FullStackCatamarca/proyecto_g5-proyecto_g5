@@ -5,15 +5,15 @@ html {
     margin: 0;
 }
 
-main {
-    background: url("img/fondo1.jpg");
+/* section {
+    background-image: url("../img/fondo11.jpg") ;
     background-size: 100%;
     background-position: center center 10px;
     background-repeat: no-repeat;
     background-attachment: scroll;
     height: 100%;
     color: #fff;
-}
+} */
 
 img {
     width: 300px;
