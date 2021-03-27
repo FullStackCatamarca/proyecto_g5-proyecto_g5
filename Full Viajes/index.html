@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css"
-        integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
 
+    <script src="//code.jivosite.com/widget/XwaoPIwtRe" async></script>
 
-    <title>FULLVIAJES</title>
-    <link rel="stylesheet" href="css/style.css">
 </head>
+<title>FULLVIAJES</title>
+<link rel="stylesheet" href="css/style.css">
+
 
 <body>
     <header class="container-fluid navbar-light bg-light">
@@ -22,8 +24,7 @@
             <div class="container">
 
                 <a class="navbar-brand">FULL VIAJES</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -32,15 +33,14 @@
                         <li class="nav-item registrado" style="display: none;">
                             <a class="nav-link" href="foro.html">Foro</a>
                         </li>
-                        
+
                         <li class="nav-item">
-                            <a class="nav-link" href="contactos.html">Contactanos</a>
+                            <a class="nav-link" href="contacto.html">Contactanos</a>
                         </li>
 
-                        
+
                         <li class="nav-item comun" style="display: none;">
-                            <a class="nav-link" aria-current="page" href="#" data-toggle="modal"
-                                data-target="#registroModal">Registrarse</a>
+                            <a class="nav-link" aria-current="page" href="#" data-toggle="modal" data-target="#registroModal">Registrarse</a>
                         </li>
 
                         <li class="nav-item comun" style="display: none;">
@@ -56,8 +56,7 @@
         </nav>
 
         <!-- Modal Registrarse -->
-        <div class="modal fade" id="registroModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+        <div class="modal fade" id="registroModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -69,16 +68,13 @@
                     <div class="modal-body">
                         <form id="registro-form">
                             <div class="form-group">
-                                <input type="text" id="registro-nombre" class="form-control"
-                                    placeholder="Nombre completo" required>
+                                <input type="text" id="registro-nombre" class="form-control" placeholder="Nombre completo" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" id="registro-email" class="form-control"
-                                    placeholder="Correo electrónico" required>
+                                <input type="email" id="registro-email" class="form-control" placeholder="Correo electrónico" required>
                             </div>
                             <div class="form-group">
-                                <input type="password" id="registro-password" class="form-control"
-                                    placeholder="Contraseña" required>
+                                <input type="password" id="registro-password" class="form-control" placeholder="Contraseña" required>
                             </div>
                             <button type="submit" class="btn btn-block btn-success">Guardar</button>
                         </form>
@@ -88,8 +84,7 @@
         </div>
 
         <!-- Modal Login -->
-        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -101,12 +96,10 @@
                     <div class="modal-body">
                         <form id="login-form">
                             <div class="form-group">
-                                <input type="email" id="login-email" class="form-control"
-                                    placeholder="Correo electrónico" required>
+                                <input type="email" id="login-email" class="form-control" placeholder="Correo electrónico" required>
                             </div>
                             <div class="form-group">
-                                <input type="password" id="login-password" class="form-control" placeholder="Contraseña"
-                                    required>
+                                <input type="password" id="login-password" class="form-control" placeholder="Contraseña" required>
                             </div>
                             <button type="submit" class="btn btn-success btn-block">Aceptar</button>
 
@@ -120,72 +113,142 @@
                 </div>
             </div>
         </div>
+
+        <!--CArrousel en header-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide 1 - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image: url('https://casadecatamarca.gob.ar/wp-content/uploads/2020/04/Campo-de-Piedra-Pomez__Gustavo-Cherro_12.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 style="color:rgb(255, 255, 255)">CAMPO DE PIEDRA POMEZ</h3>
+                        <p>Antofagasta de la Sierra.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 - Set the background image for this slide in the line below -->
+                <div class="carousel-item" width="50%" style="background-image: url('https://tripin.travel/wp-content/uploads/2017/01/web-Vista-desde-La-Cumbre-Cuesta-del-Portezuelo-1536x1024.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 style="color:rgb(255, 255, 255)">CUESTA DEL PORTEZUELO</h3>
+                        <p>Valle Viejo</p>
+                    </div>
+                </div>
+                <!-- Slide 3 - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url(https://i1.wp.com/www.turismo.catamarca.gob.ar/wp-content/uploads/2017/02/catedral_Carolina-Cabrera_27.jpg?resize=1170%2C578&ssl=1)">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 style="color:rgb(255, 255, 255)">CATEDRAL BASILICA</h3>
+                        <p>San Fernando del Valle de Catamarca</p>
+                    </div>
+                </div>
+                <!-- Slide 4 - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('http://eclecticacatamarca.com.ar/wp-content/uploads/2019/01/El-Rodeo-desde-Cristo-PH-D-Palacios-2200x800.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 style="color:rgb(255, 255, 255)">EL RODEO</h3>
+                        <p>Ambato</p>
+                    </div>
+                </div>
+                <!-- Slide 5 - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('https://i0.wp.com/kilometros.com.ar/wp-content/uploads/2016/09/FIAMBAL%C3%81-1.jpg?resize=860%2C450&ssl=1)">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 style="color:rgb(255, 255, 255)">TERMAS DE FIAMBALA</h3>
+                        <p>Tinogasta</p>
+                    </div>
+                </div>
+                <!-- Slide  - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('https://2.bp.blogspot.com/-gTyqBLB8-zw/Uua_SQp-KHI/AAAAAAAAFJk/PhVWJFdQ_gw/s1600/Planetario+Aconquija+Observatorio+astronomico+Catamarca+%252826%2529.JPG')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 style="color:rgb(255, 255, 255)">PLANETARIO JANAXPACHA WASI - ACONQUIJA</h3>
+                        <p>Andalgala</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background-image: url('https://4.bp.blogspot.com/-9xpMNB-FwHw/UmcZJMpMBgI/AAAAAAAAD-4/LreGMGK9JxU/s1600/Fotos+imagenes+nubes+tormentas+paisaje+Pirquitas+La+Puerta+monta%C3%B1as+Catamarca+Argentina+mountains+landscapes+clouds+(15).jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 style="color:rgb(255, 255, 255)">DIQUE LAS PIRQUITAS</h3>
+                        <p>Fray Mamerto Esquiu</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </header>
 
+    <section class="main ">
 
-
-    <section class="main">
-        
-        <div class="container text-center pt-4">
-            <h1>DISFRUTA CATAMARCA</h1>
-        </div>
-
-        <div class="container-fluid text-center">
-            <div class="row seccion1 pt-3 mt-3">
-                <div class="col-sm-12 col-md-6 col-lg-6">
+        <!--jQuery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+        <!--Botstrap 3 JS-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+        <div class="container-fluid text-center ">
+            <div class="row seccion1 pt-3 mt-3 ">
+                <div class="col-sm-12 col-md-6 col-lg-6 ">
                     <h2>Escursiones</h2>
-                    <a target="_blank" href="/">
-                        <img src="img/escursiones.jpg" class="rounded float" alt="escursiones">
+                    <a target="_blank " href="/ ">
+                        <img src="img/escursiones.jpg " class="rounded float " alt="escursiones ">
                         <h3>Escursiones Programadas</h3>
                     </a>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="col-sm-12 col-md-6 col-lg-6 ">
                     <h2>Recorrido del Vino</h2>
-                    <a target="_blank" href="/">
-                        <img src="img/recorridodelvino.png" class="rounded float " alt="recorrido del vino">
+                    <a target="_blank " href="/ ">
+                        <img src="img/recorridodelvino.png " class="rounded float " alt="recorrido del vino ">
                         <h3>caminos del Sabor</h3>
                     </a>
                 </div>
             </div>
 
-            <div class="row seccion2 pt-3 mt-3">
-                <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="row seccion2 pt-3 mt-3 ">
+                <div class="col-sm-12 col-md-6 col-lg-6 ">
                     <h2>Desiertos y Montañas</h2>
                     <div>
-                        <a target="_blank" href="/">
-                            <img src="img/desiertosymontañas.jpg" class="rounded float" alt="desiertos y montañas">
+                        <a target="_blank " href="/ ">
+                            <img src="img/desiertosymontañas.jpg " class="rounded float " alt="desiertos y montañas ">
                             <h3>Contrastes</h3>
                         </a>
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="col-sm-12 col-md-6 col-lg-6 ">
                     <h2>Eventos Culturales</h2>
                     <div>
-                        <a target="_blank" href="/">
-                            <img src="img/eventosculturales.jpg" class="rounded float" alt="eventos culturales">
+                        <a target="_blank " href="/ ">
+                            <img src="img/eventosculturales.jpg " class="rounded float " alt="eventos culturales ">
                             <h3>Diversion y Musica</h3>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="row seccion1 pt-3 mt-3">
-                <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="row seccion1 pt-3 mt-3 ">
+                <div class="col-sm-12 col-md-6 col-lg-6 ">
                     <h2>Recorrido Religioso</h2>
                     <div>
-                        <a target="_blank" href="/">
-                            <img src="img/recorridoreligioso.jpg" class="rounded float" alt="recorrido religioso">
+                        <a target="_blank " href="/ ">
+                            <img src="img/recorridoreligioso.jpg " class="rounded float " alt="recorrido religioso ">
                             <h3>Nuestra Señora del Valle</h3>
                         </a>
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="col-sm-12 col-md-6 col-lg-6 ">
                     <h2>Recorrido Arqueologico</h2>
                     <div>
-                        <a target="_blank" href="/">
-                            <img src="img/recorridoarqueologico.jpg" class="rounded float" alt="recorrido arqueologico">
+                        <a target="_blank " href="/ ">
+                            <img src="img/recorridoarqueologico.jpg " class="rounded float " alt="recorrido arqueologico ">
                             <h3>Nuestra Historia</h3>
                         </a>
                     </div>
@@ -193,9 +256,11 @@
             </div>
         </div>
 
+
+        </a>
     </section>
 
-    <footer class="container-fluid">
+    <footer class="container-fluid ">
         <!-- <nav>
             <a target="_blank " href="anuncios.html ">Anuncios</a>
             <a target="_blank " href="contactos.html ">Contactos</a>
@@ -207,23 +272,21 @@
 
     </footer>
 
+    <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css ">
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
 
     <!-- firebase -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js "></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -231,18 +294,18 @@
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
-            apiKey: "AIzaSyCW2Pj5wPetMNpjumKJywbHY8qPsFPL350",
-            authDomain: "fullviajes-g5.firebaseapp.com",
-            projectId: "fullviajes-g5",
-            storageBucket: "fullviajes-g5.appspot.com",
-            messagingSenderId: "89682855655",
-            appId: "1:89682855655:web:04ecdd7a715e0ad4ce0442"
+            apiKey: "AIzaSyCW2Pj5wPetMNpjumKJywbHY8qPsFPL350 ",
+            authDomain: "fullviajes-g5.firebaseapp.com ",
+            projectId: "fullviajes-g5 ",
+            storageBucket: "fullviajes-g5.appspot.com ",
+            messagingSenderId: "89682855655 ",
+            appId: "1:89682855655:web:04ecdd7a715e0ad4ce0442 "
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
     </script>
 
-    <script src="js/auth.js"></script>
+    <script src="js/auth.js "></script>
 
 </body>
 
