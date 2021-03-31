@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+
+    <script src="//code.jivosite.com/widget/XwaoPIwtRe" async></script>
+
+</head>
+<title>FULLVIAJES</title>
+<link rel="stylesheet" href="css/style.css">
+
+
+<body>
+    <header class="container-fluid navbar-light bg-light">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <a class="navbar-brand">FULL VIAJES</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item registrado" style="display: none;">
+                            <a class="nav-link" href="foro.html">Foro</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Volver al Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contactanos</a>
+                        </li>
+
+
+                        <li class="nav-item comun" style="display: none;">
+                            <a class="nav-link" aria-current="page" href="#" data-toggle="modal" data-target="#registroModal">Registrarse</a>
+                        </li>
+
+                        <li class="nav-item comun" style="display: none;">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Ingresar</a>
+                        </li>
+
+                        <li class="nav-item registrado" style="display: none;">
+                            <a class="nav-link" href="#" id="logout">Cerrar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Modal Registrarse -->
+        <div class="modal fade" id="registroModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Registrarse</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="registro-form">
+                            <div class="form-group">
+                                <input type="text" id="registro-nombre" class="form-control" placeholder="Nombre completo" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="registro-email" class="form-control" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="registro-password" class="form-control" placeholder="Contraseña" required>
+                            </div>
+                            <button type="submit" class="btn btn-block btn-success">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Login -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Iniciar Sesión</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="login-form">
+                            <div class="form-group">
+                                <input type="email" id="login-email" class="form-control" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="login-password" class="form-control" placeholder="Contraseña" required>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">Aceptar</button>
+
+                            <p id="errorLogin" class="text-danger mt-1"></p>
+                            <!-- <button type="button" class="btn btn-danger btn-block" id="googleLogin">Iniciar Sesión con
+                                Google</button>
+                            <button type="button" class="btn btn-info btn-block" id="facebookLogin">Iniciar Sesión con
+                                Facebook</button> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="main ">
+
+            <!--jQuery-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+            <!--Botstrap 3 JS-->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+
+            <div class="conteiner fluid text-center">
+                <div class="col-sm-12 col-md-12">
+                    <h1 style="text-align:center" style="background-color: cadetblue;">RUTA DEL VINO EN CATAMARCA</h1>
+                    <div class="conteiner"> <img class="img-fluid w-full" src="img/rutavino.jpg " class="rounded-top " alt="escursiones ">
+                        <div class="entry-content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="conteiner fluid text-center">
+                <div class="col-sm-12 col-md-12">
+
+                    <h2 style="text-align:justify">Catamarca es una de las fascinantes provincias del Noroeste argentino. La cordillera de los Andes la abraza desde el oeste. <br/> Hermosos viñedos a unos 300 kilómetros de la ciudad de San Fernando del Valle de Catamarca, descansan
+                        entre sierras, yacimientos arqueológicos y limitando con la ruta del adobe.</h2>
+
+                    <h3 style="text-align:justify;"><span style="color:#ff6600;">Santa María y el Valle de Abaucán</h3>
+                    <p style="text-align: justify;"> La localidad de Santa María pertenece a los Valles Calchaquíes y es una de las zonas donde hay muy buenos vinos de altura de las cepas Barbera, Bonarda, Malbec, Syrah y Tannat.<br /> Esta localidad limita con la provincia de Tucumán.
+                    </p><br />
+                    <p style="text-align: justify;">Los establecimientos están muy cerca de la ruta Nacional N° 40 que luego empalma con la ruta N° 60 y llega al otro valle. al de Abaucán donde están Tinogasta y Fiambalá otros centros vitivinícolas.</p>
+                    <p style="text-align:justify;">Este último valle está próximo a la Cordillera de los Andes a una altura de 1200 a 1750 metros sobre el nivel del mar. Con un marco de montañas imponentes que reciben el nombre de Seismiles, son picos que pertenecen a los más altos
+                        de América y que ostentan una altura de seis mil metros, de allí su nombre.</p>
+                        
+                        <h3 style="text-align:justify;"><span style="color:#ff6600;"style="text-align:justify;"><span style="color:#ff6600;">Ruta del Adobe</h3>
+                    <p style="text-align: justify;"> Entre las localidades de Tinogasta y Fiambalá entre viñas y pueblos blancos se destacan iglesias y construcciones construidas
+                        de adobe. Algunos son monumentos históricos nacionales.<br /> El adobe es una mezcla de barro, estiercol y paja. Esta mezcla es amasada y secada al sol y se da forma de ladrillos. Varias construcciones del norte argentino emplean
+                        este elemento</p>
+                                
+
+                        <h3 style="text-align:justify;"><span style="color:#ff6600;"style="text-align:justify;"><span style="color:#ff6600;">Caracteristicas del Terruño</h3> 
+                            <p style="text-align: justify;">Los suelos en la provincia son arenosos y profundos (de modo tal que las raíces pueden ir más lejos para extraer las reservas de agua)
+                            y en algunos casos con cantos rodados. Tinogasta cuenta con un terroir excepcional tanto para las vides como para los olivos.<br /> En los departamentos de Pomán y Belén también se cultiva la vid.<br /> En general los suelos
+                            tienen un excelente drenaje, factor muy positivo para el crecimiento de las plantas.</p>
+
+                        <h3 style="text-align:justify;"><span style="color:#ff6600;"style="text-align:justify;"><span style="color:#ff6600;">Bodega Santa Maria de la Vid</h3>
+                            <p style="text-align: justify;">En la localidad del mismo nombre.<br /> La bodega tiene un cartel que dice Bodega Prelatura el nombre refiere al obispado de Cafayate, en la provincia de Salta.<br /> Las primeras viñas fueron traídas por los padres Agustinos.<br
+                        /> La bodega se ubica a 3 kilómetros de Santa María que pertenece a los Valles Calchaquíes.<br /> Elaboran el vino Prelatura con uva Barbera y producen 70.000 botellas al año.<br /> Producen vinos de uva Torrontés, Malbec, Barbera,
+                        Cabernet Sauvignon y Syrah.<br /> Ubicación: Ruta Nacional N° 40, La Soledad a 3 km. de la ciudad de Santa María<br /> Contacto: (03838) 420925.</p>
+
+                        <h3 style="text-align:justify;"><span style="color:#ff6600;"style="text-align:justify;"><span style="color:#ff6600;">Bodega Hualfín</h3>
+                            <p style="text-align: justify;">Esta bodega se creo con apoyo y acuerdo del municipio con la minera La Alumbrera.<br /> La localidad de Hualfín es considerada el portal sur de los Valles Calchaquíes.<br /> Los productores del lugar se cooperativizaron.
+                        De este modo, la bodega le compra a los productores de la zona. Jorge Gómez es el encargado de la bodega.<br /> Cuenta con muy buena tecnología y con gran valor enológico.<br /> Posee tanques con capacidad entre 3.000 a 30.000
+                        litros y barricas de 225 litros.<br /> Desde el 99 al 2000 se llevó a cabo un reemplazo de uva Malbec a la Torrontés.<br /> Los viñedos se encuentran a 1.800 metros sobre el nivel del mar y el área goza de una amplitud térmica
+                        entre 32 y 15 grados lo que ayuda a una excelente madurez del fruto. Contacto: 0383 480-4568</p>
+                        <h3 style="text-align:justify;"><span style="color:#ff6600;"style="text-align:justify;"><span style="color:#ff6600;">Bodega Alta Esperanza</h3>
+                            <p style="text-align: justify;">Este establecimiento se encuentra sobre la ex ruta N° 40.<br /> La familia Longo es quien lidera esta bodega y a principios del siglo XIX elaboraba vinos de modo artesanal.<br /> Don Vittorio Longo se vino della Italia a
+                        Catamarca, compró en Tinogasta una finca de 40 hectáreas. Juan Longo nieto de don Vittorio, siguió los pasos de su abuelo y de su padre. Estudió Enología en la Universidad de Don Bosco en la provincia de Mendoza.<br /> Luego instaló
+                        su propia bodega con el apoyo de su mujer Graciela Sesto y que es la actual presidente de la institución. Ambos lograron una bodega que utiliza productos orgánicos y en donde los viñedos están entre 1.500 a 1.920 metros sobre el
+                        nivel del mar y a 200 kilómetros de la Cordillera de los Andes.<br /> En verano la temperatura sube a los 38 grados y en invierno desciende por debajo de los 0 grado. Estas diferencias de temperatura, además de las pocas precipitaciones
+                        de 250 milímetros anuales hacen a una excelente calidad y sanidad de los vinos.<br /> La bodega posee una estructura de ladrillos, de piedra común y de piedra volcánica. Cuenta con muy buena tecnología y sus viñedos son de espaldero
+                        y regados con micro goteo. Hay hectáreas cultivadas de Malbec, Cabernet Sauvignon y Syrah.<br /> Ubicación: Calle: 25 de Mayo Sur s/n &#8211; Contacto: info@altaesperanza.com</p>
+                        
+                        <h3 style="text-align:justify;"><span style="color:#ff6600;"style="text-align:justify;"><span style="color:#ff6600;">Altos de Tinogasta</h3>
+                            <p style="text-align: justify;"> Un emprendimiento único que además de viñedos tiene olivares a 12 kilómetros de Tinogasta.<br /> Este lugar ofrece la posibilidad que el propietario reciba una renta y además se vuelve dueño de su propio vino y aceite de
+                        oliva.
+                        <br /> El proyecto está liderado por Roberto Cipresso un winemaker italiano que tiene viñedos en Mendoza.<br /> Los viñedos se hallan entre 1.300 y 1.700 metros sobre el nivel del mar.<br /> Mucho frío durante la noche y mucho
+                        calor durante el día.<br /> María Diaz es su joven enóloga. Se elaboran vinos de Chardonnay y Torrontés y en tintos Malbec y Cabernet Sauvignon.<br /> Una sala de tanques de acero inoxidable de 220.000 litros.<br /> Realizan dos
+                        línea de vinos con el nombre de Seismiles y Venerable.<br /> Diego Torrea es el gerente comercial de este emprendimiento. Este es un lugar especial en donde llevar a cabo el sueño del vino propio.<br /> Ubicación: Ruta 60 km 1331
+                        camino a la Aguadita.</p>
+
+                        <h3 style="text-align:justify;"><span style="color:#ff6600;"style="text-align:justify;"><span style="color:#ff6600;">Don Diego</h3>
+                            <p style="text-align: justify;"> La Bodega se halla en la entrada al pueblo de Fiambalá en la ruta N° 60.
+                        <br /> Empezó con capitales locales y hoy en día pertenece a dos hermanos vascos.<br /> Elaboran varietales de Malbec, Syrah y Cabernet Sauvignon.<br /> El nombre de la bodega tiene que ver con Don Diego Centurión y con Don Diego
+                        Carrizo de Frites quien trae las primeras uvas en 1702.<br /> En el 2004 esta bodega logró la certificación Orgánica a través de la OIA Organización Internacional Agropecuaria de todos los viñedos.<br /> El edificio esta construido
+                        todo de adobe y cuenta con una cava subterránea para 100 barricas y 150.000 botellas.<br /> Ubicación: Avenida las Américas s/n &#8211; Contacto: 03837 499277</p>
+                        
+                        <h3 style="text-align:justify;"><span style="color:#ff6600;"style="text-align:justify;"><span style="color:#ff6600;">Cabernet de Los Andes</h3>
+                            <p style="text-align: justify;"> En el 2002 comenzó a funcionar esta bodega con Carlos Arizu que es el propietario de esta bodega y con Pedro Vicien su socio que ya no está. Arizu hace más de catorce años que vive en Fiambalá.<br /> La bodega produce vinos
+                        orgánicos y biodinámicos y sus viñedos están a una altura de 1790 metros sobre el nivel del mar.<br /> Realizan un vino con el nombre de Plenilunio que es el que se cosecha a la luz de la luna.</p>
+
+                        <h3 style="text-align:justify;"><span style="color:#ff6600;"style="text-align:justify;"><span style="color:#ff6600;">Bodega Cuello</h3>
+                            <p style="text-align: justify;"> En la finca Istataco es donde se introducen las variedades francesas. Un emprendimiento familiar que elabora varietales de Malbec Cabernet Sauvignon y Merlot.<br /> Cesar Cuello es ingeniero y fue entre otros productores
+                        quien encabezó un cambio en la zona.<br /> Una bodega familiar que ha cambiado la elaboración del vino en cantidad por el vino de calidad. Cuello destaca la ayuda y el asesoramiento que recibió de personas de la provincia de Mendoza
+                        y de San Juan para la reconversión de los viñedos.<br /> Ubicación: Copiapó 566 &#8211; Te: 03837 420367.
+                        </p>
+
+                        <h3 style="text-align:justify;"><span style="color:#ff6600;"style="text-align:justify;"><span style="color:#ff6600;">Bodega Saleme</h3>
+                            <p style="text-align: justify;"> En un almacén conocido como &#8220;La Casa de la Tía&#8221; se encuentra esta tradicional bodega que lleva el apellido de la familia. Es una de la más antigua de Tinogasta.<br /> Los Saleme partieron del Líbano para afincarse
+                        en tierras catamarqueñas.<br /> Desde el 1929 están en la zona con esta bodega que tiene 60 hectáreas.<br /> Contacto: (03837) 420026.
+                        </p>
+
+                        <h3 style="text-align:justify;"><span style="color:#ff6600;"style="text-align:justify;"><span style="color:#ff6600;">Bodega MiChango</h3>
+                            <p style="text-align: justify;"> Todo comenzó con Augusto Andreatta que llegó a la Argentina de Italia y en 1920 comienza a producir vinos. En 1927 crea la bodega en Sijan en el departamento de Pomán convirtiéndose en una de las primeras de Catamarca.<br
+                        /> Un bellísimo negocio familiar. Tuvieron períodos difíciles, el último fue con el alud del 2014 .<br /> Sin embargo, se levantaron y hoy son la quinta generación dos hermanos trabajando y haciendo foco en los vinos, en destilados
+                        como un aguardiente de uva Moscatel y en los espumantes.<br /> Una bodega cerca a cumplir cien años. Allí elaboran en blancos Torrontes dulce y un Malbec, Bonarda, un blend de Malbec, Cabernet Sauvignon y Syrah.<br /> Ubicación:
+                        Av. Presidente Castillo 4181 &#8211; bien cerca de la ciudad de Catamarca. Contacto: 0383 154699953 / 154643853 &#8211; oandreatta@bodegamichango.com.ar
+                        </p>
+                        <p style="text-align:left;">Fuentes consultadas: <a href="https://www.lanacion.com.ar/turismo/la-ruta-del-vino-de-catamarca-nid1964593" rel="nofollow">https://www.lanacion.com.ar/turismo/la-ruta-del-vino-de-catamarca-nid1964593</a><br />
+                            <a href="https://sites.google.com/site/cuelloroca/Home/bodega" rel="nofollow">https://sites.google.com/site/cuelloroca/Home/bodega</a></p>
+
+
+                        </ul>
+                </div>
+            </div>
+            </div>
+
+            </div>
+
+
+
+            </a>
+        </section>
+
+        <footer class="container-fluid ">
+            <!-- <nav>
+            <a target="_blank " href="anuncios.html ">Anuncios</a>
+            <a target="_blank " href="contactos.html ">Contactos</a>
+        </nav> -->
+
+            <br>
+
+            <p>Todos los Derechos Reservados FULLVIAJES 2021 &copy; </p>
+
+        </footer>
+
+        <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css ">
+        <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css ">
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+
+        <!-- firebase -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js "></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js "></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyCW2Pj5wPetMNpjumKJywbHY8qPsFPL350 ",
+                authDomain: "fullviajes-g5.firebaseapp.com ",
+                projectId: "fullviajes-g5 ",
+                storageBucket: "fullviajes-g5.appspot.com ",
+                messagingSenderId: "89682855655 ",
+                appId: "1:89682855655:web:04ecdd7a715e0ad4ce0442 "
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+
+        <script src="js/auth.js "></script>
+
+</body>
