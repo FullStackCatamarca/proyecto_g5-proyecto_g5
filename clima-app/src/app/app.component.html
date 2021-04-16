@@ -1,0 +1,27 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card card-body">
+                <img width="180" alt="Logo" src="https://px.cdn.lanueva.com/082018/1533905023375.webp?&extw=jpg" class=" mx-auto ">
+                <form (submit)="submitLocation(cityName, cityCode) ">
+                    <input type="text " placeholder="Escribe una localidad " class="form-control " autofocus #cityName>
+                    <input type="text " placeholder="Escribe un codigo " class="form-control " #cityCode>
+                    <button class="btn btn-primary btn-block mt-2 ">
+            Ver el clima
+          </button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6 ">
+            <div *ngIf="weather " class="card card-body text-center ">
+                <h1 class="h4 ">INFO DEL CLIMA</h1>
+                <p>Ciudad: {{weather.name}}</p>
+                <p>Latitud: {{weather.coord.lat}}</p>
+                <p>Longitud: {{weather.coord.lon}}</p>
+                <p>Humedad: {{weather.main.humidity}} %</p>
+                <p>Temperatura: {{weather.main.temp}} °C</p>
+                <p>Probabilidad de Precipitaciones: {{weather.daily.pop}}</p>
+            </div>
+        </div>
+    </div>
+</div>
