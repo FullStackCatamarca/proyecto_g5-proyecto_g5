@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+
+    <script src="//code.jivosite.com/widget/XwaoPIwtRe" async></script>
+
+</head>
+<title>FULLVIAJES</title>
+<link rel="stylesheet" href="css/style.css">
+
+
+<body>
+    <header class="container-fluid navbar-light bg-light">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <a class="navbar-brand">FULL VIAJES</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item registrado" style="display: none;">
+                            <a class="nav-link" href="foro.html">Foro</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Volver al Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contactanos</a>
+                        </li>
+
+
+                        <li class="nav-item comun" style="display: none;">
+                            <a class="nav-link" aria-current="page" href="#" data-toggle="modal" data-target="#registroModal">Registrarse</a>
+                        </li>
+
+                        <li class="nav-item comun" style="display: none;">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Ingresar</a>
+                        </li>
+
+                        <li class="nav-item registrado" style="display: none;">
+                            <a class="nav-link" href="#" id="logout">Cerrar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Modal Registrarse -->
+        <div class="modal fade" id="registroModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Registrarse</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="registro-form">
+                            <div class="form-group">
+                                <input type="text" id="registro-nombre" class="form-control" placeholder="Nombre completo" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="registro-email" class="form-control" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="registro-password" class="form-control" placeholder="Contraseña" required>
+                            </div>
+                            <button type="submit" class="btn btn-block btn-success">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Login -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Iniciar Sesión</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="login-form">
+                            <div class="form-group">
+                                <input type="email" id="login-email" class="form-control" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="login-password" class="form-control" placeholder="Contraseña" required>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">Aceptar</button>
+
+                            <p id="errorLogin" class="text-danger mt-1"></p>
+                            <!-- <button type="button" class="btn btn-danger btn-block" id="googleLogin">Iniciar Sesión con
+                                Google</button>
+                            <button type="button" class="btn btn-info btn-block" id="facebookLogin">Iniciar Sesión con
+                                Facebook</button> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="main ">
+
+            <!--jQuery-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+            <!--Botstrap 3 JS-->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+
+            <div class="conteiner fluid text-center">
+                <div class="col-sm-12 col-md-12">
+                    <h1 style="text-align:center" style="background-color: cadetblue;">EXCURSIONES PROGRAMADAS</h1>
+                </div>
+            </div>
+            <br/>
+
+            <div class="conteiner fluid text-center">
+                <h2 style="text-align:center"> Naturaleza, Amistad, Paisajes y Diversion podes encontrarlo todo en nuestras excursiones por los senderos Catamarqueños</h2>
+                <br />
+                <div class="conteiner fluid">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2 style="text-align:justify;"><span style="color:#ff6600;">EL RODEO - LAS JUNTAS </h2>
+                         <p style="text-align:left">A los pies del Cerro El Manchao, El Rodeo y Las Juntas son dos destinos turísticos erigidos por encima de los mil metros y atravesados por ríos que forman piletones y ollas naturales. Totalmente preparadas para recibir al turismo, poseen infraestructura hotelera, áreas de camping, restaurantes y balnearios con todos los servicios.</p>
+                         <p style="text-align:left;">Los dos pueblos se destacan porque tienen un microclima con temperaturas frescas.</p>
+                         <a target="_blank " href="#"><h3>Consultar Fechas</h3></a>
+                        </div> 
+                    <div class="col-6"><img src="img/rodeo.jpg " class="rounded float" alt="poncho1">
+                    </div>        
+                </div>
+            </div>
+            <br />
+            <div class="conteiner fluid text-center ">
+                <div class="row ">
+                    <div class="col-6">
+                        <h2 style="text-align:justify;"><span style="color:#ff6600;">CUESTA DEL PORTEZUELO </h2>
+                      <p style="text-align:left">La Cuesta del Portezuelo está ubicada a tan sólo a 18km. de la ciudad. Se accede a través de un paradisíaco camino que sube por la ladera de la montaña. El camino es de montaña y la altura a la que se llega permite observar increíbles paisajes. Algunos trechos de la cuesta presentan pequeños balcones que invitan a  visualizar el magnífico panorama que desde allí se puede contemplar, especialmente en la época de floración de los lapachos y palos borrachos.</p>
+                     <p style="text-align:left;">Algunos trechos de la cuesta presentan pequeños balcones que invitan a  visualizar el magnífico panorama que desde allí se puede contemplar, especialmente en la época de floración de los lapachos y palos borrachos.</p>
+                     <a target="_blank " href="#"><h3>Consultar Fechas</h3></a>
+                    </div>
+                <div class="col-6"><img src="img/portezuelo.jpg " class="rounded float align-items-end " alt="cuesta del portezuelo">
+                </div>        
+            </div>  
+
+             <br />
+
+            <div class="conteiner fluid text-center">
+                <div class="row ">
+                    <div class="col-6">
+                        <h2 style="text-align:justify;"><span style="color:#ff6600;">LAS PIRQUITAS </h2>
+                       <p style="text-align:left">El Dique Pirquitas es uno de los lugares más visitados, tanto por la gente de la misma provincia como por los visitantes externos. La localidad de Pirquitas se encuentra hacia el sur de este gran embalse, cerca del vertedero. Toda esta zona está ubicada en una eco-región de chaco serrano, predominando una vegetación de bosques serranos en la que abunda el Horco quebracho.</p>
+                      <p style="text-align:left;">El dique Pirquitas es el más grande de la provincia de Catamarca y el agua proviene del Río del Valle, que a su vez es alimentado por varios afluentes, como los ríos Ambato, Las Trancas, etc.</p>
+                      <a target="_blank " href="#"><h3>Consultar Fechas</h3></a>
+                                               
+                    </div>
+                <div class="col-6"><img src="img/pirquitas.jpg " class="rounded float align-items-end " alt="las pirquitas">
+                </div>        
+            </div>
+            <br />
+
+            <div class="conteiner fluid text-center">
+                <div class="row ">
+                    <div class="col-6">
+                        <h2 style="text-align:justify;"><span style="color:#ff6600;"> LOS SEISMILES</h2>
+                        <p style="text-align:left">Llamado así porque sus gigantes picos montañosos y volcanes alcanzan los seis mil metros de altura, que hacen a esta zona la segunda más alta del mundo.</p>
+                        <p style="text-align:left;"> Visitaran: Volcán Incahuasi (6638 msnm), Paso Internacional San Francisco,Volcán San Francisco (6016 msnm).</p> 
+                        <a target="_blank " href="#"><h3>Consultar Fechas</h3></a>  
+                    </div>       
+               <div class="col-6"><img src="img/seismiles.jpg " class="rounded float align-items-end " alt="seismiles"></a>
+                </div>        
+            </div>    
+
+             <br />
+              <div class="conteiner fluid text-center">
+                <div class="row ">
+                    <div class="col-6">
+                        <h2 style="text-align:justify;"><span style="color:#ff6600;"> CASA DE PIEDRA </h2>
+                        <p style="text-align:left">Se trata de un observatorio que era utilizado por los pueblos originarios desde la época prehispánica, se encuentra hubicado en el departamento Fray Mamerto Esquiú. </p>
+                        <p style="text-align:left;"> Un pequeño sendero y una caminata de 4 horas, te llevará hasta este fantástico lugar donde la roca madre que compone la estructura de la sierra de Gracián aflora de forma espectacular.</p>
+                        <a target="_blank " href="#"><h3>Consultar Fechas</h3></a>
+                    </div>
+                  <div class="col-6"><img src="img/casadepiedra.jpg " class="rounded float align-items-end " alt="casa de piedra"></a>
+                  </div>        
+                </div>  
+            </div>  
+
+            <br />   
+            <div class="conteiner fluid text-center">
+                <div class="row ">
+                    <div class="col-6">
+                        <h2 style="text-align:justify;"><span style="color:#ff6600;">CERRO EL CRESTON </h2>
+                        <p style="text-align:left">El cerro Crestón, cuya altitud oficial es de 2888 msnm, se ubica en el extremo norte de la sierra de Los Ángeles, subsistema serrano dependiente del gran bloque conocido como sierra Ambato.</p>
+                        <p style="text-align:left;">Acampar en el Crestón significa la posibilidad de vivir una aventura inolvidable en pleno contacto con la naturaleza.</p>
+                        <a target="_blank " href="#"><h3>Consultar Fechas</h3></a>
+                    </div>
+                  <div class="col-6"><img src="img/creston.jpg " class="rounded float align-items-end " alt="cerro creston"></a>
+                  </div>        
+                </div>  
+             </div>  
+
+        </section>
+        <br />
+        <footer class="container-fluid ">
+            <!-- <nav>
+            <a target="_blank " href="anuncios.html ">Anuncios</a>
+            <a target="_blank " href="contactos.html ">Contactos</a>
+        </nav> -->
+
+            <br>
+
+            <p>Todos los Derechos Reservados FULLVIAJES 2021 &copy; </p>
+
+        </footer>
+
+        <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css ">
+        <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css ">
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+
+        <!-- firebase -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js "></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js "></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyCW2Pj5wPetMNpjumKJywbHY8qPsFPL350 ",
+                authDomain: "fullviajes-g5.firebaseapp.com ",
+                projectId: "fullviajes-g5 ",
+                storageBucket: "fullviajes-g5.appspot.com ",
+                messagingSenderId: "89682855655 ",
+                appId: "1:89682855655:web:04ecdd7a715e0ad4ce0442 "
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+
+        <script src="js/auth.js "></script>
+
+</body>

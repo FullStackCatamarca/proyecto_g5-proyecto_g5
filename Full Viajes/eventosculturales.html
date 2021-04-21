@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+
+    <script src="//code.jivosite.com/widget/XwaoPIwtRe" async></script>
+
+</head>
+<title>FULLVIAJES</title>
+<link rel="stylesheet" href="css/style.css">
+
+
+<body>
+    <header class="container-fluid navbar-light bg-light">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <a class="navbar-brand">FULL VIAJES</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item registrado" style="display: none;">
+                            <a class="nav-link" href="foro.html">Foro</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Volver al Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contactanos</a>
+                        </li>
+
+
+                        <li class="nav-item comun" style="display: none;">
+                            <a class="nav-link" aria-current="page" href="#" data-toggle="modal" data-target="#registroModal">Registrarse</a>
+                        </li>
+
+                        <li class="nav-item comun" style="display: none;">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Ingresar</a>
+                        </li>
+
+                        <li class="nav-item registrado" style="display: none;">
+                            <a class="nav-link" href="#" id="logout">Cerrar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Modal Registrarse -->
+        <div class="modal fade" id="registroModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Registrarse</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="registro-form">
+                            <div class="form-group">
+                                <input type="text" id="registro-nombre" class="form-control" placeholder="Nombre completo" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="registro-email" class="form-control" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="registro-password" class="form-control" placeholder="Contraseña" required>
+                            </div>
+                            <button type="submit" class="btn btn-block btn-success">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Login -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Iniciar Sesión</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="login-form">
+                            <div class="form-group">
+                                <input type="email" id="login-email" class="form-control" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="login-password" class="form-control" placeholder="Contraseña" required>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">Aceptar</button>
+
+                            <p id="errorLogin" class="text-danger mt-1"></p>
+                            <!-- <button type="button" class="btn btn-danger btn-block" id="googleLogin">Iniciar Sesión con
+                                Google</button>
+                            <button type="button" class="btn btn-info btn-block" id="facebookLogin">Iniciar Sesión con
+                                Facebook</button> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="main ">
+
+            <!--jQuery-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+            <!--Botstrap 3 JS-->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+
+            <div class="conteiner fluid text-center">
+                <div class="col-sm-12 col-md-12">
+                    <h1 style="text-align:center" style="background-color: cadetblue;">EVENTOS CULTURALES</h1>
+                </div>
+            </div>
+            <br/>
+
+            <div class="conteiner fluid text-center">
+                <div class="col-sm-12 col-md-12">
+
+                    <h2 style="text-align:center"> Disfruta de la Musica, la Cultura, la Comida y el Arte catamarqueño</h2>
+                    <br />
+                    <h2 style="text-align:justify;"><span style="color:#ff6600;">FESTIVAL NACIONAL E INTERNACIONAL DEL PONCHO</h2>
+                    <p style="text-align: justify;">Es el evento del invierno más convocante, que toda una provincia aguarda con paciencia y expectativa cada mes de julio, para ser parte de un encuentro artesanal y festivalero que, con el tiempo, fue sumando gran convocatoria de distintos puntos del país y del mundo.</p>
+                    <p style="text-align: justify;">El Poncho, desde sus comienzos concitó la presencia de artistas nacionales y locales. También se puede disfrutar de la música y la gastronomía en lo que se conoce como los Ranchos. Sin embargo, el protagonista principal de esta fiesta es el poncho.</p>
+                   
+                    <div class="container-fluid text-center ">
+                        <div class="row ">
+                            <div class="col-sm-12 col-md-4 col-lg-4 ">
+                             <img src="img/poncho1.jpg " class="rounded float " alt="poncho1">
+                             <br />
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                      <img src="img/poncho3.jpg" class="rounded float " alt= 
+                                    "poncho3">
+                                    <br />  
+                                </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 ">
+                             <img src="img/poncho2.jpg" class="rounded float "alt= 
+                             "poncho2">>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="conteiner fluid text-center">
+                <div class="col-sm-12 col-md-12">
+                        <div class="col-sm-12 col-md-12">
+                             <br />
+                            <h2 style="text-align:justify;"><span style="color:#ff6600;">FIESTAS Y FESTIVALES DE VERANO</h2>
+                            <p style="text-align: justify;"> Grandes exponentes de la musica folklorica y otros generos unidos en noches magicas de diversion y alegria rodeados de naturaleza y cultura.</p>
+                            <div class="container-fluid text-center ">
+                                <div class="row ">
+                                    <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                        <h2>Fiesta Nacional de San Sebastián</h2>
+                                            <img src="img/sansebastian.jpg " class="rounded float " alt="Fiesta Nacional de San Sebastián"><br />
+                                            <h5>Poman </h5>
+                                            <a target="_blank " href="desiertosymontañas.html">
+                                                <h3>Leer Mas</h3>
+                                            </a>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                        <h2>Festival Nacional El Fuerte de Andalgalá</h2>
+                                        
+                                            <img src="img/elfuerteandalgala.jpg" class="rounded float " alt= 
+                                            "Festival Nacional El Fuerte de Andalgalá"><br />
+                                           <h5>Andalgalá</h5>
+                                           <a target="_blank " href="desiertosymontañas.html"> 
+                                               <h3>Leer Mas</h3>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                        <h2>Festival Nacional de la Vendimia</h2>
+                                            <img src="img/vendimia.jpg " class="rounded float " alt="volcantofagasta"> <br />
+                                            <h5>Tinogasta </h5>
+                                            <a target="_blank " href="desiertosymontañas.html">
+                                                <h3>Leer Mas</h3>
+                                             </a>
+                                    </div>
+                                </div>   
+
+                                <div class="conteiner fluid text-center">
+                                    <div class="col-sm-12 col-md-12">
+                                            <div class="col-sm-12 col-md-12">
+                                                 <br />
+                                           <div class="container-fluid text-center ">
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                                            <h2>Festival Nacional del Yokavil </h2>
+                                                                <img src="img/yokavil.jpg " class="rounded float " alt="yokavil"><br />
+                                                                <h5>Santa Maria</h5>
+                                                                <a target="_blank " href="desiertosymontañas.html">
+                                                                    <h3>Leer Mas</h3>
+                                                                </a>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                                            <h2>Festival Nacional del Cabrito</h2>
+                                                             <img src="img/cabrito.jpg" class="rounded float " alt= 
+                                                                "cabrito"><br />
+                                                               <h5>Recreo</h5>
+                                                               <a target="_blank " href="desiertosymontañas.html"> 
+                                                                   <h3>Leer Mas</h3>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                                            <h2>Festival Noche de Playa</h2>
+                                                                <img src="img/playa.jpg " class="rounded float " alt="playa"> <br />
+                                                                <h5>Belen</h5>
+                                                                <a target="_blank " href="desiertosymontañas.html">
+                                                                    <h3>Leer Mas</h3>
+                                                                 </a>
+                                                        </div>
+                                                    </div>   
+
+            </a>
+        </section>
+        <br />
+        <footer class="container-fluid ">
+            <!-- <nav>
+            <a target="_blank " href="anuncios.html ">Anuncios</a>
+            <a target="_blank " href="contactos.html ">Contactos</a>
+        </nav> -->
+
+            <br>
+
+            <p>Todos los Derechos Reservados FULLVIAJES 2021 &copy; </p>
+
+        </footer>
+
+        <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css ">
+        <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css ">
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+
+        <!-- firebase -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js "></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js "></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyCW2Pj5wPetMNpjumKJywbHY8qPsFPL350 ",
+                authDomain: "fullviajes-g5.firebaseapp.com ",
+                projectId: "fullviajes-g5 ",
+                storageBucket: "fullviajes-g5.appspot.com ",
+                messagingSenderId: "89682855655 ",
+                appId: "1:89682855655:web:04ecdd7a715e0ad4ce0442 "
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+
+        <script src="js/auth.js "></script>
+
+</body>

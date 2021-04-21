@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+
+    <script src="//code.jivosite.com/widget/XwaoPIwtRe" async></script>
+
+</head>
+<title>FULLVIAJES</title>
+<link rel="stylesheet" href="css/style.css">
+
+
+<body>
+    <header class="container-fluid navbar-light bg-light">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <a class="navbar-brand">FULL VIAJES</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item registrado" style="display: none;">
+                            <a class="nav-link" href="foro.html">Foro</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Volver al Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contactanos</a>
+                        </li>
+
+
+                        <li class="nav-item comun" style="display: none;">
+                            <a class="nav-link" aria-current="page" href="#" data-toggle="modal" data-target="#registroModal">Registrarse</a>
+                        </li>
+
+                        <li class="nav-item comun" style="display: none;">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Ingresar</a>
+                        </li>
+
+                        <li class="nav-item registrado" style="display: none;">
+                            <a class="nav-link" href="#" id="logout">Cerrar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Modal Registrarse -->
+        <div class="modal fade" id="registroModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Registrarse</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="registro-form">
+                            <div class="form-group">
+                                <input type="text" id="registro-nombre" class="form-control" placeholder="Nombre completo" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="registro-email" class="form-control" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="registro-password" class="form-control" placeholder="Contraseña" required>
+                            </div>
+                            <button type="submit" class="btn btn-block btn-success">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Login -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Iniciar Sesión</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="login-form">
+                            <div class="form-group">
+                                <input type="email" id="login-email" class="form-control" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="login-password" class="form-control" placeholder="Contraseña" required>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">Aceptar</button>
+
+                            <p id="errorLogin" class="text-danger mt-1"></p>
+                            <!-- <button type="button" class="btn btn-danger btn-block" id="googleLogin">Iniciar Sesión con
+                                Google</button>
+                            <button type="button" class="btn btn-info btn-block" id="facebookLogin">Iniciar Sesión con
+                                Facebook</button> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="main ">
+
+            <!--jQuery-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+            <!--Botstrap 3 JS-->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+
+            <div class="conteiner fluid text-center">
+                <div class="col-sm-12 col-md-12">
+                    <h1 style="text-align:center" style="background-color: cadetblue;">DESIERTOS Y MONTAÑAS</h1>
+                </div>
+            </div>
+            <br/>
+
+            <div class="conteiner fluid text-center">
+                <div class="col-sm-12 col-md-12">
+
+                    <h2 style="text-align:center"> Disfruta de un Viaje a Nuestros Origenes y Recorre la Historia a travez del Arte y la Arquitectura de los Primeros Habitantes de esta Tierra</h2>
+                    <br />
+                    <h2 style="text-align:justify;"><span style="color:#ff6600;">VOLCANES</h2>
+                    <p style="text-align: justify;">Fabulosos conos volcánicos, extensas coladas de lava, campos de roca volcánica; Siete de los ocho volcanes más altos del mundo se encuentran en catamarca.
+                    </p>
+                    <div class="container-fluid text-center ">
+                        <div class="row seccion1 pt-3 mt-3 ">
+                            <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                <h2> Volcán Galan </h2>
+                                    <img src="img/volcangalan.jpg " class="rounded float " alt="volcangalan"><br />
+                                    <h5>Ubicado en el departamento Antofagasta de la Sierra, el Volcán Galán es un fenómeno de la geología, su nombre proviene del quechua "Kkala” que significa “desnudo". Tiene una caldera volcánica con un domo resurgente que forma un cerro en su interior. Su boca mide 42 km de diámetro, y por sus dimensiones es considerado el más grande del mundo. </h5>
+                                    <a target="_blank " href="desiertosymontañas.html">
+                                        <h3>Leer Mas</h3>
+                                    </a>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                <h2>Volcán Alumbrera</h2>
+                                
+                                    <img src="img/volcanalumbrera.jpg" class="rounded float " alt= 
+                                    "volcanalumbrera"><br />
+                                   <h5>El Volcán Alumbrera con su caldera de 300 mts de diámetros y fondo rocoso de 200 mts, se encuentra a 11 km de la Villa de Antofagasta. Desde su cráter tiene una vista unicca del paisaje que se encuentra a su alrededor, como la Laguna Alumbrera formada por el río Punilla, el mas importante de la zona, en el habitan flamencos rosados y otras especies.</h5>
+                                   <a target="_blank " href="desiertosymontañas.html"> 
+                                       <h3>Leer Mas</h3>
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                <h2>Volcán Antofagasta</h2>
+                                    <img src="img/volcanantofagasta.jpg" class="rounded float " alt="volcantofagasta"> <br />
+                                    <h5>El Volcán Antofagasta es una chimenea  de 4000 m.s.n.m con forma de cono ceniza, se ubica a unos 8 km al sur de la Localidad de Antofagasta de la Sierra.Su Vista Panorámica desde el punto sur oriental del cráter, abarca desde el Campo de Piedra Pómez hasta la Laguna Antofagasta. Se puede llegar en vehículo, a caballo o caminando. </h5>
+                                    <a target="_blank " href="desiertosymontañas.html">
+                                        <h3>Leer Mas</h3>
+                                     </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteiner fluid text-center">
+                <div class="col-sm-12 col-md-12">
+                        <div class="col-sm-12 col-md-12">
+                             <br />
+                            <h2 style="text-align:justify;"><span style="color:#ff6600;">SALARES</h2>
+                            <p style="text-align: justify;">Paisajes desérticos, rústicos y sutiles a la vez, con especies de flora y fauna unicas; que nos recuerda a otro planeta.
+                            </p>
+                            <div class="container-fluid text-center ">
+                                <div class="row seccion1 pt-3 mt-3 ">
+                                    <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                        <h2>Salar de Antofalla </h2>
+                                            <img src="img/SalarAntofalla.jpg " class="rounded float " alt="Salar de Antofalla"><br />
+                                            <h5>Es uno de los lugares más inhóspitos e inaccesibles de la Puna Argentina. Sin agua, ni vegetación y sólo formas caprichosas trabajadas por la erosión durante milenios es lo único que se encuentra en decenas de kilómetros a la redonda. </h5>
+                                            <a target="_blank " href="desiertosymontañas.html">
+                                                <h3>Leer Mas</h3>
+                                            </a>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                        <h2>Salar del Hombre Muerto</h2>
+                                        
+                                            <img src="img/salarhombremuerto.jpg" class="rounded float " alt= 
+                                            "volcanalumbrera"><br />
+                                           <h5>Ubicado  el corazón de la puna catamarqueña, conforma un depósito salino o salar, en cuyo subsuelo, el agua subterránea es una salmuera saturada de cloruro de sodio, portadora de litio, potasio, sulfato, borato-bórax, y otros componentes menores como el rubidio, el cesio, y el bromo..</h5>
+                                           <a target="_blank " href="desiertosymontañas.html"> 
+                                               <h3>Leer Mas</h3>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                        <h2>Salinas Grandes</h2>
+                                            <img src="img/salgrandes.jpg " class="rounded float " alt="salinas grandes"> <br />
+                                            <h5> Ubicadas en el ingreso a nuestra Provincia, forman la mayor parte y el núcleo de la geográficamente llamada Cuenca Saliniana, tiene una extensión de 6000 km². </h5>
+                                            <a target="_blank " href="desiertosymontañas.html">
+                                                <h3>Leer Mas</h3>
+                                             </a>
+                                    </div>
+                                </div>   
+
+                                <div class="conteiner fluid text-center">
+                                    <div class="col-sm-12 col-md-12">
+                                            <div class="col-sm-12 col-md-12">
+                                                 <br />
+                                                <h2 style="text-align:justify;"><span style="color:#ff6600;">LAGUNAS</h2>
+                                                <p style="text-align: justify;">Paisajes desérticos, rústicos y sutiles a la vez, con especies de flora y fauna unicas; que nos recuerda a otro planeta.
+                                                </p>
+                                                <div class="container-fluid text-center ">
+                                                    <div class="row seccion1 pt-3 mt-3 ">
+                                                        <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                                            <h2>Laguna Diamante</h2>
+                                                                <img src="img/lagunadiamante.jpg " class="rounded float " alt="laguna diamante"><br />
+                                                                <h5>E Lleva ese nombre por el reflejo del sol en las piedras que contiene. Ubicada en un inmenso cráter de 45km de diámetro y en su interior, posee un espejo de aguas turquesas poblada de flamencos.- </h5>
+                                                                <a target="_blank " href="desiertosymontañas.html">
+                                                                    <h3>Leer Mas</h3>
+                                                                </a>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                                            <h2>Laguna Grande</h2>
+                                                            
+                                                                <img src="img/Lagunagrande.jpg" class="rounded float " alt= 
+                                                                "volcanalumbrera"><br />
+                                                               <h5>Se ubica a una altitud de 4150 msnm camino al cráter del volcán Galán, el más grande del mundo, posee la mayor concentración de flamencos rosados que hay en la Puna.</h5>
+                                                               <a target="_blank " href="desiertosymontañas.html"> 
+                                                                   <h3>Leer Mas</h3>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                                            <h2>Laguna Antofagasta</h2>
+                                                                <img src="img/lagunaAntofagasta.jpg " class="rounded float " alt="volcantofagasta"> <br />
+                                                                <h5>Se trata de una laguna natural ubicada al pie del volcán Antofagasta, dueña de una exótica belleza, alberga distintas especies de aves tales como: patos puneños, gallaretas andinas y tres especies de flamencos o parinas: flamenco común, andino y parina chica, entre la flora local se destaca la totora o junco que alcanza en épocas de verano casi los dos metros de altura.</h5>
+                                                                <a target="_blank " href="desiertosymontañas.html">
+                                                                    <h3>Leer Mas</h3>
+                                                                 </a>
+                                                        </div>
+                                                    </div>   
+
+            </a>
+        </section>
+        <br />
+        <footer class="container-fluid ">
+            <!-- <nav>
+            <a target="_blank " href="anuncios.html ">Anuncios</a>
+            <a target="_blank " href="contactos.html ">Contactos</a>
+        </nav> -->
+
+            <br>
+
+            <p>Todos los Derechos Reservados FULLVIAJES 2021 &copy; </p>
+
+        </footer>
+
+        <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css ">
+        <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css ">
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+
+        <!-- firebase -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js "></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js "></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyCW2Pj5wPetMNpjumKJywbHY8qPsFPL350 ",
+                authDomain: "fullviajes-g5.firebaseapp.com ",
+                projectId: "fullviajes-g5 ",
+                storageBucket: "fullviajes-g5.appspot.com ",
+                messagingSenderId: "89682855655 ",
+                appId: "1:89682855655:web:04ecdd7a715e0ad4ce0442 "
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+
+        <script src="js/auth.js "></script>
+
+</body>
